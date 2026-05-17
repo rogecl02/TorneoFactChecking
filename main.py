@@ -46,7 +46,7 @@ def predict(data: InputData):
     enc = tokenizer(
         data.claim,
         data.context,
-        max_length=64,
+        max_length=96,
         padding="max_length",
         truncation=True,
         return_tensors="pt",
